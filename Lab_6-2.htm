@@ -14,7 +14,10 @@
   function myFunction() {
     alert("The function has been called.");
   }
-
+  function myFunction(arg1) {
+    alert("The function has been called and was passed " + arg1);
+    return "myFunction() return value";
+}
 </script>
 
 </head>
@@ -25,9 +28,8 @@
 <hr/>
 
 <!-- Add an onclick event handler to call the function -->
-
 <form name="myForm">
-<input type="button" VALUE="Call Function" />
+    <input type="button" value="Call Function" onclick="alert(myFunction('a string of text'));" />
 </form>
 
 </body>
